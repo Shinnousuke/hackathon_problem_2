@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    background:#ece4c8;
+    position:relative;
+}
+
+/* TOP SHAPES */
+
+.top-shapes{
+    position:absolute;
+    top:20px;
+    right:40px;
+    font-size:80px;
+    color:#f6b84e;
+}
+
+/* BOTTOM CURVE */
+
+.bottom-curve{
+    position:absolute;
+    bottom:-120px;
+    left:-50px;
+    width:120%;
+    height:250px;
+    background:#006b1f;
+    border-radius:50%;
+}
+
+/* LEFT IMAGE */
+
+.left-image{
+    position:absolute;
+    bottom:120px;
+    left:-20px;
+    width:170px;
+    transform:rotate(-10deg);
+}
+
+/* RIGHT IMAGE */
+
+.right-image{
+    position:absolute;
+    bottom:80px;
+    right:20px;
+    width:220px;
+}
+
+/* LOGIN BOX */
+
+.login-container{
+    width:380px;
+    background:#0a6618;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    z-index:2;
+}
+
+.login-container h1{
+    color:white;
+    text-align:center;
+    margin-bottom:35px;
+    font-size:42px;
+}
+
+/* INPUT */
+
+.input-box{
+    width:100%;
+    background:#55aa5d;
+    margin-bottom:20px;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    padding:0 15px;
+}
+
+.input-box input{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:white;
+    font-size:16px;
+}
+
+.input-box input::placeholder{
+    color:white;
+}
+
+.input-box i{
+    color:white;
+}
+
+/* OPTIONS */
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:25px;
+}
+
+.forgot,
+.signup-link{
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.signup-link:hover{
+    text-decoration:underline;
+}
+
+/* BUTTON */
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#333;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+/* POPUP */
+
+.popup{
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.5);
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:10;
+}
+
+/* POPUP BOX */
+
+.popup-box{
+    width:380px;
+    background:#0a6618;
+    padding:35px;
+    border-radius:12px;
+    position:relative;
+    animation:popup 0.3s ease;
+}
+
+@keyframes popup{
+    from{
+        transform:scale(0.7);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.popup-box h2{
+    color:white;
+    text-align:center;
+    margin-bottom:25px;
+    font-size:35px;
+}
+
+/* CLOSE BUTTON */
+
+.close-btn{
+    position:absolute;
+    top:10px;
+    right:20px;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* OTP BUTTON */
+
+.otp-btn{
+    background:#ffcc70;
+    margin-bottom:15px;
+}
+
+/* SIGNUP BUTTON */
+
+.signup-btn{
+    background:white;
+}
