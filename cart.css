@@ -44,3 +44,16 @@ body{
     border-radius:10px;
     cursor:pointer;
 }
+.remove-btn{
+    background:#ff4d4d;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.remove-btn:hover{
+    opacity:0.9;
+}
